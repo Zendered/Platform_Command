@@ -1,6 +1,6 @@
 ﻿using PlatformService.API.Models;
 
-namespace PlatformService.API.Data.Repo
+namespace PlatformService.API.Data.Repository
 {
     public class PlatformRepo : IPlatformRepo
     {
