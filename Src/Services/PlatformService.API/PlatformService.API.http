@@ -1,6 +1,11 @@
-﻿@PlatformService.API_Local_HostAddress =  http://localhost:5240
+﻿@PlatformService.API_HostAddress = 
+@PlatformService.API_Local_HostAddress =  http://localhost:5240
 @PlatformApi = /api/platforms
 
 GET {{PlatformService.API_Local_HostAddress}}{{PlatformApi}}
+
+###
+
+GET {{PlatformService.API_Local_HostAddress}}{{PlatformApi}}/4
 
 ###

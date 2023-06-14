@@ -28,9 +28,17 @@ namespace PlatformService.API.Controller
         }
 
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ActionResult<PlatformReadDto> GetPlatformById(int id)
         {
-            return "value";
+            var platformItem = _platformRepo.GetPlatformById(id);
+
+            if (platformItem != null)
+            {
+                return Ok(_mapper.Map<PlatformReadDto>(platformItem));
+            }
+
+            return NotFound();
+
         }
 
         [HttpPost]
