@@ -10,6 +10,10 @@ namespace PlatformService.API
         {
             builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
         }
+        public static void AddCustomAutoMapper(this WebApplicationBuilder builder)
+        {
+            builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+        }
 
         public static void AddCustomDataBase(this WebApplicationBuilder builder)
         {
