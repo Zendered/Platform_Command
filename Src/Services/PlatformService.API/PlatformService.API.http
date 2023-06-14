@@ -6,6 +6,6 @@ GET {{PlatformService.API_Local_HostAddress}}{{PlatformApi}}
 
 ###
 
-GET {{PlatformService.API_Local_HostAddress}}{{PlatformApi}}/4
+GET {{PlatformService.API_Local_HostAddress}}{{PlatformApi}}/3
 
 ###
