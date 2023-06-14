@@ -6,6 +6,17 @@ GET {{PlatformService.API_Local_HostAddress}}{{PlatformApi}}
 
 ###
 
-GET {{PlatformService.API_Local_HostAddress}}{{PlatformApi}}/3
+GET {{PlatformService.API_Local_HostAddress}}{{PlatformApi}}/5
+
+###
+
+POST {{PlatformService.API_Local_HostAddress}}{{PlatformApi}}
+Content-Type: application/json
+
+{
+    "name": "Docker",
+    "publisher": "Docker",
+    "cost": "Free"
+}
 
 ###
